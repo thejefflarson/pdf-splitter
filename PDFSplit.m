@@ -23,8 +23,9 @@
 	NSRect bounds = [page boundsForBox: kPDFDisplayBoxMediaBox];
 	NSImage *image = [[NSImage alloc] initWithData:[page dataRepresentation]];
 	
-	CGFloat newHeight = bounds.size.width * bounds.size.height / _width;
+	CGFloat newHeight = _width * bounds.size.height / bounds.size.width;
 	NSSize outSize;
+	
 	NSLog(@"%f %f", _width, newHeight);
 	outSize.width  = _width;
 	outSize.height = newHeight;
