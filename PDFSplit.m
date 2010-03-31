@@ -21,7 +21,8 @@
   - (void) outPutImageAtIndex: (int) index{
 	PDFPage *page  = [self pageAtIndex:index];
 	NSRect bounds = [page boundsForBox: kPDFDisplayBoxMediaBox];
-	CIImage *pdfImage = [CIImage imageWithData:[page dataRepresentation]];
+	NSPDFImageRep *pdfImageRep = [NSPDFImageRep imageRepWithData:[page dataRepresentation]];
+	CIImage *pdfImage = [CIImage imageWithData: ];
 	
 	CGFloat newHeight = _width * bounds.size.height / bounds.size.width;
 	CGRect outSize;
