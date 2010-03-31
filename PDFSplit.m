@@ -21,17 +21,30 @@
   - (void) outPutImageAtIndex: (int) index{
 	PDFPage *page  = [self pageAtIndex:index];
 	NSRect bounds = [page boundsForBox: kPDFDisplayBoxMediaBox];
-	NSImage *image = [[NSImage alloc] initWithData:[page dataRepresentation]];
+	CIImage *pdfImage = [CIImage imageWithData:[page dataRepresentation]];
 	
 	CGFloat newHeight = _width * bounds.size.height / bounds.size.width;
-	NSSize outSize;
-	
+	CGRect outSize;
 	NSLog(@"%f %f", _width, newHeight);
-	outSize.width  = _width;
-	outSize.height = newHeight;
-	image.size = outSize;
-	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"tif"];
-	[_fm createFileAtPath: [outFile path]  contents:[image TIFFRepresentation] attributes:nil];
+	outSize.origin.x = 0;
+	outSize.origin.y = 0;
+	outSize.size.width  = _width;
+	outSize.size.height = newHeight;
+	NSLog(@"%@", pdfImage);  
+	NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes: NULL pixelsWide: _width 
+								 pixelsHigh: newHeight bitsPerSample: 16 samplesPerPixel: 5 hasAlpha: NO isPlanar: NO
+								 colorSpaceName:NSDeviceRGBColorSpace bytesPerRow:0 bitsPerPixel:0 ];
+	
+	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];	
+	[NSGraphicsContext saveGraphicsState];
+	[NSGraphicsContext setCurrentContext: nsContext];
+	[[nsContext CIContext] drawImage:pdfImage inRect:outSize fromRect:outSize];
+	[NSGraphicsContext restoreGraphicsState];
+	
+
+	
+	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"tiff"];
+	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:NSTIFFFileType properties:nil] attributes:nil];
 
   }
 
