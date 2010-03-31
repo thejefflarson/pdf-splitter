@@ -11,15 +11,27 @@
 @implementation PDFSplit
 
 
-  - (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (NSNumber *) width{
+  - (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width{
 	_fm     = [[NSFileManager alloc] init];
 	_outDir = outDir;
-	_width  = width;
+	_width  = (CGFloat) width;
 	return [self initWithURL:url];
   }
 
   - (void) outPutImageAtIndex: (int) index{
+	PDFPage *page  = [self pageAtIndex:index];
+	NSRect bounds = [page boundsForBox: kPDFDisplayBoxMediaBox];
+	NSImage *image = [[NSImage alloc] initWithData:[page dataRepresentation]];
 	
+	CGFloat newHeight = bounds.size.width * bounds.size.height / _width;
+	NSSize outSize;
+	NSLog(@"%f %f", _width, newHeight);
+	outSize.width  = _width;
+	outSize.height = newHeight;
+	image.size = outSize;
+	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"tif"];
+	[_fm createFileAtPath: [outFile path]  contents:[image TIFFRepresentation] attributes:nil];
+
   }
 
   - (void) split{
@@ -29,11 +41,5 @@
 	  [self outPutImageAtIndex: i];
 	}
   }
-  
-  - (void) dealloc{
-	[_fm release];
-	[_outDir release];
-	[_width release];
-	[super dealloc];
-  }
+
 @end

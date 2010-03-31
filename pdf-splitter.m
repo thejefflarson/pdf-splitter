@@ -3,18 +3,18 @@
 
 
 int main (int argc, const char * argv[]) {
-  NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
   PDFSplit *pdfDoc;
   NSURL *pdfURL;
   NSURL *outputDir;
-  NSNumber *width;
+  CGFloat width;
   @try {
 	if(argc < 3){
 	  [NSException raise:@"TooFewArgs" format:@"TooFewArgs"];
 	}
 	pdfURL    = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[1] encoding:NSASCIIStringEncoding]];
 	outputDir = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[2] encoding:NSASCIIStringEncoding]];
-	width	  = [NSNumber numberWithInt: atoi(argv[3])];
+	width	  = (CGFloat) atof(argv[3]);
+
 	pdfDoc = [[PDFSplit alloc] initWithURLOutDirWidth: pdfURL outDir: outputDir width: width];
 	[pdfDoc split];
   }
@@ -24,7 +24,6 @@ int main (int argc, const char * argv[]) {
 	
   } 
   @finally {
-	[pool drain];
 	return 0;
   }
 }

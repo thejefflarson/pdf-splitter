@@ -12,9 +12,9 @@
 @interface PDFSplit : PDFDocument {
   NSFileManager *_fm;
   NSURL *_outDir;
-  NSNumber *_width;
+  CGFloat _width;
 }
 
-- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (NSNumber *) width;
+- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width;
 - (void) split;
 @end
