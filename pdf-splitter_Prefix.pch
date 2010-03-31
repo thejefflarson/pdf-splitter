@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'pdf-splitter' target in the 'pdf-splitter' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
