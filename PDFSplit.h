@@ -13,8 +13,10 @@
   NSFileManager *_fm;
   NSURL *_outDir;
   CGFloat _width;
+  NSString *_outFormat;
+  NSDictionary *_formats;
 }
 
-- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width;
+- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width outFormat: outFormat;
 - (void) split;
 @end

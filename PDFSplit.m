@@ -11,11 +11,24 @@
 @implementation PDFSplit
 
 
-  - (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width{
-	_fm     = [[NSFileManager alloc] init];
-	_outDir = outDir;
-	_width  = (CGFloat) width;
+- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width outFormat: (NSString *) outFormat{
+	_fm        = [[NSFileManager alloc] init];
+	_outDir    = outDir;
+	_outFormat = outFormat;
+	_width     = (CGFloat) width;
+    _formats   = [NSDictionary dictionaryWithObjectsAndKeys:
+				  [NSNumber numberWithInt: NSBMPFileType], @"gif",
+				  [NSNumber numberWithInt: NSTIFFFileType], @"tiff", 
+				  [NSNumber numberWithInt: NSJPEGFileType], @"jpeg", 
+				  [NSNumber numberWithInt: NSPNGFileType], @"png",
+				  [NSNumber numberWithInt: NSBMPFileType], @"bmp", 
+				  [NSNumber numberWithInt: NSJPEG2000FileType], @"jpeg2000", 
+				  nil];
 	return [self initWithURL:url];
+  }
+
+  - (int) format: (NSString *) fmt{
+	return [[_formats objectForKey:fmt] intValue];
   }
 
   - (void) outPutImageAtIndex: (int) index{
@@ -43,12 +56,12 @@
 	[page drawWithBox: kPDFDisplayBoxCropBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
-
-	
-	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"gif"];
-	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:NSGIFFileType properties:nil] attributes:nil];
+	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index+1]] URLByAppendingPathExtension:_outFormat];
+	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:[self format:_outFormat] properties:nil] attributes:nil];
 
   }
+  
+
 
   - (void) split{
 	[_fm createDirectoryAtPath:  [_outDir path] withIntermediateDirectories: YES attributes: nil error: NULL];
