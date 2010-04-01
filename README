@@ -10,3 +10,8 @@ options:
  OUTPUT_DIR:	the directory where you want to place the pdf images
  WIDTH:			the width of the resulting image
  FORMAT:		the output format
+ 
+ 
+ 
+INSTALL
+  open pdf-splitter.xcodeproj in xcode and compile. 

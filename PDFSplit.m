@@ -37,7 +37,6 @@
 	
 	CGFloat newHeight = _width * bounds.size.height / bounds.size.width;
 	NSRect outSize;
-	NSLog(@"%f %f", _width, newHeight);
 	outSize.origin.x = 0;
 	outSize.origin.y = 0;
 	outSize.size.width  = _width;
