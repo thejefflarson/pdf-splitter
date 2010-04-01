@@ -49,7 +49,7 @@
 	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];	
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
-	NSAffineTransform* xform = [NSAffineTransform transform];
+	NSAffineTransform *xform = [NSAffineTransform transform];
 	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
 	[xform concat];
 	[page drawWithBox: kPDFDisplayBoxCropBox];
@@ -57,17 +57,30 @@
 	
 	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index+1]] URLByAppendingPathExtension:_outFormat];
 	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:[self format:_outFormat] properties:nil] attributes:nil];
-
+	
+	
+	[bitmap release];
   }
   
 
 
-  - (void) split{
+- (void) split{
 	[_fm createDirectoryAtPath:  [_outDir path] withIntermediateDirectories: YES attributes: nil error: NULL];
 	int pages = [self pageCount];
+
 	for(int i=0; i < pages; i++){
+	  NSAutoreleasePool *subPool = [[NSAutoreleasePool alloc] init];
 	  [self outPutImageAtIndex: i];
+	  [subPool release];
 	}
+  }
+
+  - (void) dealloc{
+	[_fm release];
+	[_outFormat release];
+	[_formats release];
+	[_outDir release];
+	[super dealloc];
   }
 
 @end

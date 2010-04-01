@@ -8,6 +8,8 @@ int main (int argc, const char * argv[]) {
   NSURL *outputDir;
   CGFloat width;
   NSString *format;
+  NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
   @try {
 	if(argc < 5){
 	  [NSException raise:@"TooFewArgs" format:@"You need to include ORIGINAL_FILE OUTPUT_DIR WIDTH FORMAT in your arguments."];
@@ -19,6 +21,7 @@ int main (int argc, const char * argv[]) {
 
 	pdfDoc = [[PDFSplit alloc] initWithURLOutDirWidth: pdfURL outDir: outputDir width: width outFormat: format];
 	[pdfDoc split];
+
   }
   @catch (NSException * e) {
 	printf("Error: %s\n", [[e reason] cStringUsingEncoding:NSASCIIStringEncoding]);
@@ -38,6 +41,8 @@ int main (int argc, const char * argv[]) {
 	
   } 
   @finally {
+	[format release];
+	[pool drain];
 	return 0;
   }
 }
