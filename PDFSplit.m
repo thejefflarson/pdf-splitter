@@ -37,7 +37,9 @@
 	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];	
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
-	[page setBounds:outSize forBox: kPDFDisplayBoxCropBox];
+	NSAffineTransform* xform = [NSAffineTransform transform];
+	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
+	[xform concat];
 	[page drawWithBox: kPDFDisplayBoxCropBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
