@@ -17,9 +17,9 @@
 	_outFormat = outFormat;
 	_width     = (CGFloat) width;
     _formats   = [NSDictionary dictionaryWithObjectsAndKeys:
-				  [NSNumber numberWithInt: NSBMPFileType], @"gif",
-				  [NSNumber numberWithInt: NSTIFFFileType], @"tiff", 
-				  [NSNumber numberWithInt: NSJPEGFileType], @"jpeg", 
+				  [NSNumber numberWithInt: NSGIFFileType], @"gif",
+				  [NSNumber numberWithInt: NSTIFFFileType], @"tif", 
+				  [NSNumber numberWithInt: NSJPEGFileType], @"jpg", 
 				  [NSNumber numberWithInt: NSPNGFileType], @"png",
 				  [NSNumber numberWithInt: NSBMPFileType], @"bmp", 
 				  [NSNumber numberWithInt: NSJPEG2000FileType], @"jpeg2000", 
@@ -46,18 +46,19 @@
 								 pixelsHigh: newHeight bitsPerSample: 8 samplesPerPixel: 4 hasAlpha: NO isPlanar: NO
 								 colorSpaceName:NSDeviceCMYKColorSpace bytesPerRow:0  bitsPerPixel:0 ];
 	
-	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];	
+	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];
+	[nsContext setShouldAntialias:YES];
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
 	NSAffineTransform *xform = [NSAffineTransform transform];
 	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
 	[xform concat];
+	
 	[page drawWithBox: kPDFDisplayBoxCropBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
 	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index+1]] URLByAppendingPathExtension:_outFormat];
 	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:[self format:_outFormat] properties:nil] attributes:nil];
-	
 	
 	[bitmap release];
   }
