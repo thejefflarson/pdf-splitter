@@ -21,31 +21,30 @@
   - (void) outPutImageAtIndex: (int) index{
 	PDFPage *page  = [self pageAtIndex:index];
 	NSRect bounds = [page boundsForBox: kPDFDisplayBoxMediaBox];
-	NSImafe *pdfImageN = [NSImage imageRepWithData:[page dataRepresentation]];
-	CIImage *pdfImage = [CIImage imageWithData: [pdfImageN TIFFRepresentation]];
 	
 	CGFloat newHeight = _width * bounds.size.height / bounds.size.width;
-	CGRect outSize;
+	NSRect outSize;
 	NSLog(@"%f %f", _width, newHeight);
 	outSize.origin.x = 0;
 	outSize.origin.y = 0;
 	outSize.size.width  = _width;
 	outSize.size.height = newHeight;
-	NSLog(@"%@", pdfImage);  
+
 	NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes: NULL pixelsWide: _width 
-								 pixelsHigh: newHeight bitsPerSample: 16 samplesPerPixel: 5 hasAlpha: NO isPlanar: NO
-								 colorSpaceName:NSDeviceRGBColorSpace bytesPerRow:0 bitsPerPixel:0 ];
+								 pixelsHigh: newHeight bitsPerSample: 8 samplesPerPixel: 4 hasAlpha: NO isPlanar: NO
+								 colorSpaceName:NSDeviceCMYKColorSpace bytesPerRow:0  bitsPerPixel:0 ];
 	
 	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];	
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
-	[[nsContext CIContext] drawImage:pdfImage inRect:outSize fromRect:outSize];
+	[page setBounds:outSize forBox: kPDFDisplayBoxCropBox];
+	[page drawWithBox: kPDFDisplayBoxCropBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
 
 	
-	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"tiff"];
-	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:NSTIFFFileType properties:nil] attributes:nil];
+	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index]] URLByAppendingPathExtension:@"gif"];
+	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:NSGIFFileType properties:nil] attributes:nil];
 
   }
 
