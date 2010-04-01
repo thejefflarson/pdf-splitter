@@ -54,7 +54,7 @@
 	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
 	[xform concat];
 	
-	[page drawWithBox: kPDFDisplayBoxCropBox];
+	[page drawWithBox: kPDFDisplayBoxMediaBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
 	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index+1]] URLByAppendingPathExtension:_outFormat];
