@@ -38,6 +38,7 @@
 		7ACC7A0D1163061100E1FB4C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7ACC7BC91163264400E1FB4C /* AboutStacks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AboutStacks.pdf; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* pdf-splitter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "pdf-splitter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E10F13311652077000ABF44 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		C6859EA3029092ED04C91782 /* pdf-splitter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "pdf-splitter.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +108,7 @@
 		C6859EA2029092E104C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				9E10F13311652077000ABF44 /* README */,
 				C6859EA3029092ED04C91782 /* pdf-splitter.1 */,
 			);
 			name = Documentation;

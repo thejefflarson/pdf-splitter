@@ -1,0 +1,12 @@
+=
+
+pdf-splitter will split your pdf files and output page images
+using native cocoa libraries for speed and memory management.
+
+USAGE: pdf-splitter ORIGINAL_FILE OUTPUT_DIR WIDTH FORMAT
+
+options:
+ ORIGINAL_FILE:	the pdf you want to split
+ OUTPUT_DIR:	the directory where you want to place the pdf images
+ WIDTH:			the width of the resulting image
+ FORMAT:		the output format
