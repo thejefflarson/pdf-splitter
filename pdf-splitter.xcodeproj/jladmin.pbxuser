@@ -93,10 +93,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 291773385;
-			PBXWorkspaceStateSaveDate = 291773385;
+			PBXPerProjectTemplateStateSaveDate = 292136166;
+			PBXWorkspaceStateSaveDate = 292136166;
 		};
 		perUserProjectItems = {
+			7AC252F31169A4EF00B7BF32 /* PBXTextBookmark */ = 7AC252F31169A4EF00B7BF32 /* PBXTextBookmark */;
+			7AC252F41169A4EF00B7BF32 /* PBXTextBookmark */ = 7AC252F41169A4EF00B7BF32 /* PBXTextBookmark */;
 			7ACC7B4611631A4400E1FB4C = 7ACC7B4611631A4400E1FB4C /* PBXTextBookmark */;
 			7ACC7B4811631A4400E1FB4C = 7ACC7B4811631A4400E1FB4C /* PBXTextBookmark */;
 			7ACC7B4A11631A4400E1FB4C = 7ACC7B4A11631A4400E1FB4C /* PBXTextBookmark */;
@@ -198,43 +200,43 @@
 			7ACC7C85116331C600E1FB4C = 7ACC7C85116331C600E1FB4C /* PBXTextBookmark */;
 			7ACC7C86116331DF00E1FB4C = 7ACC7C86116331DF00E1FB4C /* PBXTextBookmark */;
 			7ACC7C87116331E500E1FB4C = 7ACC7C87116331E500E1FB4C /* PBXTextBookmark */;
-			7ACC7CA211641D3500E1FB4C /* PBXTextBookmark */ = 7ACC7CA211641D3500E1FB4C /* PBXTextBookmark */;
-			7ACC7CA311641D3500E1FB4C /* PBXTextBookmark */ = 7ACC7CA311641D3500E1FB4C /* PBXTextBookmark */;
-			7ACC7CAC11641F0900E1FB4C /* PBXTextBookmark */ = 7ACC7CAC11641F0900E1FB4C /* PBXTextBookmark */;
-			7ACC7CBA11641F8A00E1FB4C /* PBXTextBookmark */ = 7ACC7CBA11641F8A00E1FB4C /* PBXTextBookmark */;
-			7ACC7CBF11641FA600E1FB4C /* PBXTextBookmark */ = 7ACC7CBF11641FA600E1FB4C /* PBXTextBookmark */;
-			7ACC7CC011641FA600E1FB4C /* PBXTextBookmark */ = 7ACC7CC011641FA600E1FB4C /* PBXTextBookmark */;
-			7ACC7CC111641FA600E1FB4C /* PBXTextBookmark */ = 7ACC7CC111641FA600E1FB4C /* PBXTextBookmark */;
-			7ACC7CC211641FB800E1FB4C /* PBXTextBookmark */ = 7ACC7CC211641FB800E1FB4C /* PBXTextBookmark */;
-			7ACC7CC311641FB800E1FB4C /* PBXTextBookmark */ = 7ACC7CC311641FB800E1FB4C /* PBXTextBookmark */;
-			7ACC7CC81164201E00E1FB4C /* PBXTextBookmark */ = 7ACC7CC81164201E00E1FB4C /* PBXTextBookmark */;
-			7ACC7CC91164201E00E1FB4C /* PBXTextBookmark */ = 7ACC7CC91164201E00E1FB4C /* PBXTextBookmark */;
-			7ACC7CCA1164201E00E1FB4C /* PBXTextBookmark */ = 7ACC7CCA1164201E00E1FB4C /* PBXTextBookmark */;
-			7ACC7CCB1164201E00E1FB4C /* PBXTextBookmark */ = 7ACC7CCB1164201E00E1FB4C /* PBXTextBookmark */;
-			7ACC7CCC1164202A00E1FB4C /* PBXTextBookmark */ = 7ACC7CCC1164202A00E1FB4C /* PBXTextBookmark */;
-			7ACC7CCF1164206D00E1FB4C /* PBXTextBookmark */ = 7ACC7CCF1164206D00E1FB4C /* PBXTextBookmark */;
-			7ACC7CD2116420B000E1FB4C /* PBXTextBookmark */ = 7ACC7CD2116420B000E1FB4C /* PBXTextBookmark */;
-			7ACC7CD5116420D400E1FB4C /* PBXTextBookmark */ = 7ACC7CD5116420D400E1FB4C /* PBXTextBookmark */;
-			7ACC7CDA1164211100E1FB4C /* PBXTextBookmark */ = 7ACC7CDA1164211100E1FB4C /* PBXTextBookmark */;
-			7ACC7CDB1164211C00E1FB4C /* PBXTextBookmark */ = 7ACC7CDB1164211C00E1FB4C /* PBXTextBookmark */;
-			7ACC7CDC1164229F00E1FB4C /* PBXTextBookmark */ = 7ACC7CDC1164229F00E1FB4C /* PBXTextBookmark */;
-			7ACC7CDD1164229F00E1FB4C /* PBXTextBookmark */ = 7ACC7CDD1164229F00E1FB4C /* PBXTextBookmark */;
-			7ACC7CDF116422BA00E1FB4C /* PBXTextBookmark */ = 7ACC7CDF116422BA00E1FB4C /* PBXTextBookmark */;
-			7ACC7CE0116422BA00E1FB4C /* PBXTextBookmark */ = 7ACC7CE0116422BA00E1FB4C /* PBXTextBookmark */;
-			7ACC7CE2116422BA00E1FB4C /* PBXTextBookmark */ = 7ACC7CE2116422BA00E1FB4C /* PBXTextBookmark */;
-			7ACC7CEA1164249700E1FB4C /* PBXTextBookmark */ = 7ACC7CEA1164249700E1FB4C /* PBXTextBookmark */;
-			7ACC7CEB1164249700E1FB4C /* PBXTextBookmark */ = 7ACC7CEB1164249700E1FB4C /* PBXTextBookmark */;
-			7ACC7CEC1164249700E1FB4C /* PBXTextBookmark */ = 7ACC7CEC1164249700E1FB4C /* PBXTextBookmark */;
-			7ACC7CED1164249700E1FB4C /* PBXTextBookmark */ = 7ACC7CED1164249700E1FB4C /* PBXTextBookmark */;
-			7ACC7CEE1164249700E1FB4C /* PBXTextBookmark */ = 7ACC7CEE1164249700E1FB4C /* PBXTextBookmark */;
-			7ACC7CF3116424F400E1FB4C /* PBXTextBookmark */ = 7ACC7CF3116424F400E1FB4C /* PBXTextBookmark */;
-			7ACC7CF81164250500E1FB4C /* PBXTextBookmark */ = 7ACC7CF81164250500E1FB4C /* PBXTextBookmark */;
-			7ACC7CF91164250800E1FB4C /* PBXTextBookmark */ = 7ACC7CF91164250800E1FB4C /* PBXTextBookmark */;
-			7ACC7CFC1164254700E1FB4C /* PBXTextBookmark */ = 7ACC7CFC1164254700E1FB4C /* PBXTextBookmark */;
-			7ACC7CFF1164262900E1FB4C /* PBXTextBookmark */ = 7ACC7CFF1164262900E1FB4C /* PBXTextBookmark */;
-			7ACC7D02116426D800E1FB4C /* PBXTextBookmark */ = 7ACC7D02116426D800E1FB4C /* PBXTextBookmark */;
-			7ACC7D05116426EC00E1FB4C /* PBXTextBookmark */ = 7ACC7D05116426EC00E1FB4C /* PBXTextBookmark */;
-			7ACC7D08116426F900E1FB4C /* PBXTextBookmark */ = 7ACC7D08116426F900E1FB4C /* PBXTextBookmark */;
+			7ACC7CA211641D3500E1FB4C = 7ACC7CA211641D3500E1FB4C /* PBXTextBookmark */;
+			7ACC7CA311641D3500E1FB4C = 7ACC7CA311641D3500E1FB4C /* PBXTextBookmark */;
+			7ACC7CAC11641F0900E1FB4C = 7ACC7CAC11641F0900E1FB4C /* PBXTextBookmark */;
+			7ACC7CBA11641F8A00E1FB4C = 7ACC7CBA11641F8A00E1FB4C /* PBXTextBookmark */;
+			7ACC7CBF11641FA600E1FB4C = 7ACC7CBF11641FA600E1FB4C /* PBXTextBookmark */;
+			7ACC7CC011641FA600E1FB4C = 7ACC7CC011641FA600E1FB4C /* PBXTextBookmark */;
+			7ACC7CC111641FA600E1FB4C = 7ACC7CC111641FA600E1FB4C /* PBXTextBookmark */;
+			7ACC7CC211641FB800E1FB4C = 7ACC7CC211641FB800E1FB4C /* PBXTextBookmark */;
+			7ACC7CC311641FB800E1FB4C = 7ACC7CC311641FB800E1FB4C /* PBXTextBookmark */;
+			7ACC7CC81164201E00E1FB4C = 7ACC7CC81164201E00E1FB4C /* PBXTextBookmark */;
+			7ACC7CC91164201E00E1FB4C = 7ACC7CC91164201E00E1FB4C /* PBXTextBookmark */;
+			7ACC7CCA1164201E00E1FB4C = 7ACC7CCA1164201E00E1FB4C /* PBXTextBookmark */;
+			7ACC7CCB1164201E00E1FB4C = 7ACC7CCB1164201E00E1FB4C /* PBXTextBookmark */;
+			7ACC7CCC1164202A00E1FB4C = 7ACC7CCC1164202A00E1FB4C /* PBXTextBookmark */;
+			7ACC7CCF1164206D00E1FB4C = 7ACC7CCF1164206D00E1FB4C /* PBXTextBookmark */;
+			7ACC7CD2116420B000E1FB4C = 7ACC7CD2116420B000E1FB4C /* PBXTextBookmark */;
+			7ACC7CD5116420D400E1FB4C = 7ACC7CD5116420D400E1FB4C /* PBXTextBookmark */;
+			7ACC7CDA1164211100E1FB4C = 7ACC7CDA1164211100E1FB4C /* PBXTextBookmark */;
+			7ACC7CDB1164211C00E1FB4C = 7ACC7CDB1164211C00E1FB4C /* PBXTextBookmark */;
+			7ACC7CDC1164229F00E1FB4C = 7ACC7CDC1164229F00E1FB4C /* PBXTextBookmark */;
+			7ACC7CDD1164229F00E1FB4C = 7ACC7CDD1164229F00E1FB4C /* PBXTextBookmark */;
+			7ACC7CDF116422BA00E1FB4C = 7ACC7CDF116422BA00E1FB4C /* PBXTextBookmark */;
+			7ACC7CE0116422BA00E1FB4C = 7ACC7CE0116422BA00E1FB4C /* PBXTextBookmark */;
+			7ACC7CE2116422BA00E1FB4C = 7ACC7CE2116422BA00E1FB4C /* PBXTextBookmark */;
+			7ACC7CEA1164249700E1FB4C = 7ACC7CEA1164249700E1FB4C /* PBXTextBookmark */;
+			7ACC7CEB1164249700E1FB4C = 7ACC7CEB1164249700E1FB4C /* PBXTextBookmark */;
+			7ACC7CEC1164249700E1FB4C = 7ACC7CEC1164249700E1FB4C /* PBXTextBookmark */;
+			7ACC7CED1164249700E1FB4C = 7ACC7CED1164249700E1FB4C /* PBXTextBookmark */;
+			7ACC7CEE1164249700E1FB4C = 7ACC7CEE1164249700E1FB4C /* PBXTextBookmark */;
+			7ACC7CF3116424F400E1FB4C = 7ACC7CF3116424F400E1FB4C /* PBXTextBookmark */;
+			7ACC7CF81164250500E1FB4C = 7ACC7CF81164250500E1FB4C /* PBXTextBookmark */;
+			7ACC7CF91164250800E1FB4C = 7ACC7CF91164250800E1FB4C /* PBXTextBookmark */;
+			7ACC7CFC1164254700E1FB4C = 7ACC7CFC1164254700E1FB4C /* PBXTextBookmark */;
+			7ACC7CFF1164262900E1FB4C = 7ACC7CFF1164262900E1FB4C /* PBXTextBookmark */;
+			7ACC7D02116426D800E1FB4C = 7ACC7D02116426D800E1FB4C /* PBXTextBookmark */;
+			7ACC7D05116426EC00E1FB4C = 7ACC7D05116426EC00E1FB4C /* PBXTextBookmark */;
+			7ACC7D08116426F900E1FB4C = 7ACC7D08116426F900E1FB4C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 7ACC78881162D39D00E1FB4C /* Source Control */;
 		userBuildSettings = {
@@ -254,6 +256,26 @@
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 166}";
 		};
+	};
+	7AC252F31169A4EF00B7BF32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
+		name = "PDFSplit.m: 22";
+		rLen = 0;
+		rLoc = 573;
+		rType = 0;
+		vrLen = 601;
+		vrLoc = 324;
+	};
+	7AC252F41169A4EF00B7BF32 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
+		name = "PDFSplit.m: 22";
+		rLen = 0;
+		rLoc = 573;
+		rType = 0;
+		vrLen = 601;
+		vrLoc = 324;
 	};
 	7ACC787D1162D38500E1FB4C /* pdf-splitter */ = {
 		isa = PBXExecutable;
@@ -317,9 +339,9 @@
 	};
 	7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {978, 741}}";
-			sepNavSelRange = "{576, 0}";
-			sepNavVisRange = "{346, 1498}";
+			sepNavIntBoundsRect = "{{0, 0}, {1013, 1144}}";
+			sepNavSelRange = "{2646, 0}";
+			sepNavVisRange = "{1724, 1077}";
 			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
@@ -396,7 +418,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 12";
 		rLen = 0;
-		rLoc = 411;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 207;
 		vrLoc = 0;
@@ -476,7 +498,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 12";
 		rLen = 0;
-		rLoc = 411;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 207;
 		vrLoc = 0;
@@ -486,7 +508,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 13";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 213;
 		vrLoc = 0;
@@ -496,7 +518,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 14";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 387;
 		vrLoc = 0;
@@ -725,7 +747,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 13";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 387;
 		vrLoc = 0;
@@ -982,7 +1004,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 13";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 387;
 		vrLoc = 0;
@@ -992,7 +1014,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 403;
 		vrLoc = 0;
@@ -1028,7 +1050,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 35;
@@ -1038,7 +1060,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 403;
 		vrLoc = 0;
@@ -1078,7 +1100,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 35;
@@ -1118,7 +1140,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 403;
 		vrLoc = 0;
@@ -1128,7 +1150,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 19";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 405;
 		vrLoc = 0;
@@ -1148,7 +1170,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 19";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 323;
 		vrLoc = 77;
@@ -1178,7 +1200,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 387;
 		vrLoc = 0;
@@ -1188,7 +1210,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 472;
 		vrLoc = 0;
@@ -1198,7 +1220,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 16";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 405;
 		vrLoc = 35;
@@ -1208,7 +1230,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 17";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 0;
@@ -1218,7 +1240,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 17";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 432;
 		vrLoc = 35;
@@ -1228,7 +1250,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 23";
 		rLen = 0;
-		rLoc = 568;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 0;
@@ -1238,7 +1260,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 23";
 		rLen = 0;
-		rLoc = 568;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 432;
 		vrLoc = 35;
@@ -1248,7 +1270,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 14";
 		rLen = 0;
-		rLoc = 390;
+		rLoc = 387;
 		rType = 0;
 		vrLen = 568;
 		vrLoc = 0;
@@ -1258,7 +1280,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 14";
 		rLen = 0;
-		rLoc = 390;
+		rLoc = 387;
 		rType = 0;
 		vrLen = 439;
 		vrLoc = 38;
@@ -1278,7 +1300,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 0;
@@ -1288,7 +1310,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 19";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 0;
@@ -1388,7 +1410,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 31";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 80;
@@ -1398,7 +1420,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 31";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 80;
@@ -1408,7 +1430,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 31";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 325;
 		vrLoc = 81;
@@ -1428,7 +1450,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 1652;
 		vrLoc = 346;
@@ -1438,7 +1460,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 346;
@@ -1448,7 +1470,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 36";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 708;
 		vrLoc = 785;
@@ -1458,7 +1480,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 36";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 1643;
 		vrLoc = 346;
@@ -1488,7 +1510,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 36";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 708;
 		vrLoc = 785;
@@ -1528,7 +1550,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 36";
 		rLen = 0;
-		rLoc = 962;
+		rLoc = 959;
 		rType = 0;
 		vrLen = 1643;
 		vrLoc = 346;
@@ -1538,7 +1560,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1600;
 		vrLoc = 395;
@@ -1548,7 +1570,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1600;
 		vrLoc = 395;
@@ -1558,7 +1580,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 395;
@@ -1568,7 +1590,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1594;
 		vrLoc = 395;
@@ -1578,7 +1600,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1593;
 		vrLoc = 395;
@@ -1588,7 +1610,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 35";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 395;
@@ -1598,7 +1620,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 34";
 		rLen = 0;
-		rLoc = 936;
+		rLoc = 933;
 		rType = 0;
 		vrLen = 1215;
 		vrLoc = 693;
@@ -1618,7 +1640,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 663;
@@ -1628,7 +1650,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 395;
@@ -1649,11 +1671,6 @@
 		name = PDFView.h;
 		path = /System/Library/Frameworks/Quartz.framework/Frameworks/PDFKit.framework/Headers/PDFView.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {978, 4862}}";
-			sepNavSelRange = "{744, 1}";
-			sepNavVisRange = "{0, 973}";
-		};
 	};
 	7ACC7CE2116422BA00E1FB4C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1667,6 +1684,7 @@
 	};
 	7ACC7CE3116422BA00E1FB4C /* PDFView.h */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
 		name = PDFView.h;
 		path = /System/Library/Frameworks/Quartz.framework/Frameworks/PDFKit.framework/Headers/PDFView.h;
 		sourceTree = "<absolute>";
@@ -1706,7 +1724,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 24";
 		rLen = 0;
-		rLoc = 501;
+		rLoc = 498;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 395;
@@ -1716,7 +1734,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 41";
 		rLen = 0;
-		rLoc = 1305;
+		rLoc = 1302;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 346;
@@ -1726,7 +1744,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 40";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1226;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 346;
@@ -1736,7 +1754,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 346;
@@ -1746,7 +1764,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1505;
 		vrLoc = 346;
@@ -1756,7 +1774,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1513;
 		vrLoc = 346;
@@ -1766,7 +1784,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1184;
 		vrLoc = 576;
@@ -1776,7 +1794,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 346;
@@ -1786,7 +1804,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 346;
@@ -1796,7 +1814,7 @@
 		fRef = 7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */;
 		name = "PDFSplit.m: 26";
 		rLen = 0;
-		rLoc = 576;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 1498;
 		vrLoc = 346;

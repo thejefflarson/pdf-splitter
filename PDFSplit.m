@@ -16,7 +16,7 @@
 	_outDir    = outDir;
 	_outFormat = outFormat;
 	_width     = (CGFloat) width;
-    _formats   = [NSDictionary dictionaryWithObjectsAndKeys:
+	_formats   = [NSDictionary dictionaryWithObjectsAndKeys:
 				  [NSNumber numberWithInt: NSGIFFileType], @"gif",
 				  [NSNumber numberWithInt: NSTIFFFileType], @"tif", 
 				  [NSNumber numberWithInt: NSJPEGFileType], @"jpg", 
