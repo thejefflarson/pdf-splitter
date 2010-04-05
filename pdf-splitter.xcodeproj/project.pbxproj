@@ -36,7 +36,6 @@
 		7ACC788D1162D3BC00E1FB4C /* PDFSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFSplit.m; sourceTree = "<group>"; };
 		7ACC78911162D3DF00E1FB4C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		7ACC7A0D1163061100E1FB4C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		7ACC7BC91163264400E1FB4C /* AboutStacks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AboutStacks.pdf; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* pdf-splitter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "pdf-splitter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E10F13311652077000ABF44 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		C6859EA3029092ED04C91782 /* pdf-splitter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "pdf-splitter.1"; sourceTree = "<group>"; };
@@ -100,7 +99,6 @@
 		7ACC7BBD1163257A00E1FB4C /* TestData */ = {
 			isa = PBXGroup;
 			children = (
-				7ACC7BC91163264400E1FB4C /* AboutStacks.pdf */,
 			);
 			name = TestData;
 			sourceTree = "<group>";
