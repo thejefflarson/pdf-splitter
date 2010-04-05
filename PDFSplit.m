@@ -43,17 +43,19 @@
 	outSize.size.height = newHeight;
 
 	NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes: NULL pixelsWide: _width 
-								 pixelsHigh: newHeight bitsPerSample: 8 samplesPerPixel: 4 hasAlpha: NO isPlanar: NO
-								 colorSpaceName:NSDeviceCMYKColorSpace bytesPerRow:0  bitsPerPixel:0 ];
+								 pixelsHigh: newHeight bitsPerSample: 8 samplesPerPixel: 3 hasAlpha: NO isPlanar: NO
+								 colorSpaceName:NSDeviceRGBColorSpace bytesPerRow:0  bitsPerPixel:32];
 	
 	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];
 	[nsContext setShouldAntialias:YES];
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
+
 	NSAffineTransform *xform = [NSAffineTransform transform];
 	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
 	[xform concat];
-	
+	[[NSColor whiteColor] set];
+	NSRectFill(outSize);
 	[page drawWithBox: kPDFDisplayBoxMediaBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
