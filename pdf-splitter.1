@@ -14,17 +14,17 @@
 .Nd Split PDF files into image files for OCR or web page images.
 .Sh SYNOPSIS             \" Section Header - required - don't modify
 .Nm 
-.Ar file output width format
+.Ao Ar file Ac Ao Ar output Ac Ar width format
 .Sh DESCRIPTION          \" Section Header - required - don't modify
 
 .Nm
 will split your pdf files and output page images using native cocoa libraries for speed and memory management. 
 It requires each of the following arguments:
 .Pp                      \" Inserts a space
-.Bl -tag -width ".Op Ar format" -indent  \" Begins a tagged list 
-.It Ar file               \" Each item preceded by .It macro
+.Bl -tag -width ".Ao Ar output Ac" -indent  \" Begins a tagged list 
+.It Ao Ar file Ac               \" Each item preceded by .It macro
 An input file in pdf format.
-.It Ar output
+.It Ao Ar output Ac
 The directory in which to store the files as 1.format, 2.format etc. It will be created if necessary.
 .It Ar width
 The width of the output images.
