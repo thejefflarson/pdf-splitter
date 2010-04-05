@@ -18,7 +18,7 @@ int main (int argc, const char * argv[]) {
 	outputDir = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[2] encoding:NSASCIIStringEncoding]];
 	width	  = (CGFloat) atof(argv[3]);
 	format	  = [[NSString alloc] initWithCString: argv[4] encoding:NSASCIIStringEncoding];
-
+	[format autorelease];
 	pdfDoc = [[PDFSplit alloc] initWithURLOutDirWidth: pdfURL outDir: outputDir width: width outFormat: format];
 	[pdfDoc split];
 
@@ -33,15 +33,14 @@ int main (int argc, const char * argv[]) {
 		  @"\n"
 		  @"options:\n"
 		  @" ORIGINAL_FILE:\tthe pdf you want to split\n"
-		  @" OUTPUT_DIR:\t\tthe directory where you want to place the pdf images\n"
-		  @" WIDTH:\t\t\tthe width of the resulting image\n"
-		  @" FORMAT:\t\t\tthe output format\n"
+		  @" OUTPUT_DIR:\tthe directory where you want to place the pdf images\n"
+		  @" WIDTH:\t\tthe width of the resulting image\n"
+		  @" FORMAT:\tthe output format\n"
 		   cStringUsingEncoding:NSASCIIStringEncoding]
 	);
 	
   } 
   @finally {
-	[format release];
 	[pool drain];
 	return 0;
   }

@@ -11,7 +11,6 @@ options:
  WIDTH:			the width of the resulting image
  FORMAT:		the output format
  
- 
- 
 INSTALL
-  open pdf-splitter.xcodeproj in xcode and compile. 
+  in your pdf-splitter directory: 
+  sudo xcodebuild clean install 
