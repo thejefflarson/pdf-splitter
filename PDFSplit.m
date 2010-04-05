@@ -47,15 +47,15 @@
 								 colorSpaceName:NSDeviceRGBColorSpace bytesPerRow:0  bitsPerPixel:32];
 	
 	NSGraphicsContext *nsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmap];
-	[nsContext setShouldAntialias:YES];
 	[NSGraphicsContext saveGraphicsState];
 	[NSGraphicsContext setCurrentContext: nsContext];
 
 	NSAffineTransform *xform = [NSAffineTransform transform];
-	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
-	[xform concat];
 	[[NSColor whiteColor] set];
 	NSRectFill(outSize);
+	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
+	[xform concat];
+
 	[page drawWithBox: kPDFDisplayBoxMediaBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
