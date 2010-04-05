@@ -4,7 +4,7 @@
 .\"man mdoc for the short list of editing options
 .\"/usr/share/misc/mdoc.template
 .Dd 3/30/10               \" DATE 
-.Dt pdf-splitter 1      \" Program name and manual section number 
+.Dt pdf-splitter 1 CON     \" Program name and manual section number 
 .Os Darwin
 .Sh NAME                 \" Section Header - required - don't modify 
 .Nm pdf-splitter
@@ -14,24 +14,22 @@
 .Nd Split PDF files into image files for OCR or web page images.
 .Sh SYNOPSIS             \" Section Header - required - don't modify
 .Nm 
-.Op Ar file              \" [file]
-.Op Ar output
-.Ar width
-.Ar format
+.Ar file output Op Ar width 
+.Op Ar format
 .Sh DESCRIPTION          \" Section Header - required - don't modify
 
-.Nm pdf-splitter
+.Nm
 will split your pdf files and output page images using native cocoa libraries for speed and memory management. 
 It requires each of the following arguments:
 .Pp                      \" Inserts a space
-.Bl -tag -width -indent  \" Begins a tagged list 
-.It file               \" Each item preceded by .It macro
+.Bl -tag -width ".Op Ar format" -indent  \" Begins a tagged list 
+.It Ar file               \" Each item preceded by .It macro
 An input file in pdf format.
-.It output
+.It Ar output
 The directory in which to store the files as 1.format, 2.format etc. It will be created if necessary.
-.It width
+.It Op Ar width
 The width of the output images.
-.It format
+.It Op Ar format
 An image format, currently tif, jpg, png, gif, png, and jpeg2000 are supported.
 .El                      \" Ends the list
 .Pp
@@ -63,3 +61,5 @@ An image format, currently tif, jpg, png, gif, png, and jpeg2000 are supported.
 .Xr sips 1
 .\" .Sh BUGS              \" Document known, unremedied bugs 
 .\" .Sh HISTORY           \" Document history if command behaves in a unique manner
+.Sh AUTHOR
+.An "Jeff Larson", http://github.com/thejefflarson
