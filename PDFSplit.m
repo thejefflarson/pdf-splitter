@@ -11,10 +11,10 @@
 @implementation PDFSplit
 
 
-- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width outFormat: (NSString *) outFormat{
+- (id) initWithURLOutDirWidth: (NSURL *) url outDir:(NSURL *) outDir width: (CGFloat) width{
 	_fm        = [[NSFileManager alloc] init];
 	_outDir    = outDir;
-	_outFormat = outFormat;
+	_outFormat = [outDir pathExtension];
 	_width     = (CGFloat) width;
 	_formats   = [NSDictionary dictionaryWithObjectsAndKeys:
 				  [NSNumber numberWithInt: NSGIFFileType], @"gif",
@@ -26,6 +26,8 @@
 				  nil];
 	return [self initWithURL:url];
   }
+
+
 
   - (int) format: (NSString *) fmt{
 	return [[_formats objectForKey:fmt] intValue];
@@ -41,7 +43,6 @@
 	outSize.origin.y = 0;
 	outSize.size.width  = _width;
 	outSize.size.height = newHeight;
-
 	NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes: NULL pixelsWide: _width 
 								 pixelsHigh: newHeight bitsPerSample: 8 samplesPerPixel: 3 hasAlpha: NO isPlanar: NO
 								 colorSpaceName:NSDeviceRGBColorSpace bytesPerRow:0  bitsPerPixel:32];
@@ -53,28 +54,28 @@
 	NSAffineTransform *xform = [NSAffineTransform transform];
 	[[NSColor whiteColor] set];
 	NSRectFill(outSize);
+
 	[xform scaleXBy:(outSize.size.width/bounds.size.width) yBy:(outSize.size.height/bounds.size.height)];
 	[xform concat];
-
+	
 	[page drawWithBox: kPDFDisplayBoxMediaBox];
 	[NSGraphicsContext restoreGraphicsState];
 	
-	NSURL *outFile = [[_outDir URLByAppendingPathComponent:[NSString stringWithFormat:@"%d", index+1]] URLByAppendingPathExtension:_outFormat];
+	NSURL *outFile = [NSURL URLWithString:[NSString stringWithFormat:[_outDir path], index+1]];
 	[_fm createFileAtPath: [outFile path]  contents: [bitmap representationUsingType:[self format:_outFormat] properties:nil] attributes:nil];
 	
 	[bitmap release];
   }
-  
-
 
 - (void) split{
-	[_fm createDirectoryAtPath:  [_outDir path] withIntermediateDirectories: YES attributes: nil error: NULL];
-	int pages = [self pageCount];
-
-	for(int i=0; i < pages; i++){
-	  NSAutoreleasePool *subPool = [[NSAutoreleasePool alloc] init];
-	  [self outPutImageAtIndex: i];
-	  [subPool release];
+  NSLog(@"%@",[_outDir baseURL]);
+  [_fm createDirectoryAtPath: [[_outDir URLByDeletingLastPathComponent] path] withIntermediateDirectories: YES attributes: nil error: NULL];
+  int pages = [self pageCount];
+  
+  for(int i=0; i < pages; i++){
+	NSAutoreleasePool *subPool = [[NSAutoreleasePool alloc] init];
+	[self outPutImageAtIndex: i];
+	[subPool release];
 	}
   }
 

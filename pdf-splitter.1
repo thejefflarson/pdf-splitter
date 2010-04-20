@@ -25,11 +25,11 @@ It requires each of the following arguments:
 .It Ao Ar file Ac               \" Each item preceded by .It macro
 An input file in pdf format.
 .It Ao Ar output Ac
-The directory in which to store the files as 1.format, 2.format etc. It will be created if necessary.
+A c-style format string (e.g. /tmp/%d.png) declaring where to store the output images.
+The path component will be created if necessary, and the the extension specifies the type of output image.
+Currently tif, jpg, png, gif, png, and jpeg2000 are supported.
 .It Ar width
 The width of the output images.
-.It Ar format
-An image format, currently tif, jpg, png, gif, png, and jpeg2000 are supported.
 .El                      \" Ends the list
 .Pp
 

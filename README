@@ -7,9 +7,10 @@ USAGE: pdf-splitter ORIGINAL_FILE OUTPUT_DIR WIDTH FORMAT
 
 options:
  ORIGINAL_FILE:	the pdf you want to split
- OUTPUT_DIR:	the directory where you want to place the pdf images
+ OUTPUT:		the output path where you want to place the pdf images. It
+ 		should be a c format string like '%d.png'. The extension specifies
+ 		the resulting image's type. Consult the man page for allowed types.
  WIDTH:			the width of the resulting image
- FORMAT:		the output format
  
 INSTALL
   in your pdf-splitter directory: 

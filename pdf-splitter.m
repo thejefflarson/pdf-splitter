@@ -5,23 +5,19 @@
 int main (int argc, const char * argv[]) {
   PDFSplit *pdfDoc;
   NSURL *pdfURL;
-  NSURL *outputDir;
+  NSURL *output;
   CGFloat width;
-  NSString *format;
   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
   @try {
-	if(argc < 5){
-	  [NSException raise:@"TooFewArgs" format:@"You need to include ORIGINAL_FILE OUTPUT_DIR WIDTH FORMAT in your arguments."];
+	if(argc < 4){
+	  [NSException raise:@"TooFewArgs" format:@"You need to include ORIGINAL_FILE OUTPUT_DIR WIDTH in your arguments."];
 	}
 	pdfURL    = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[1] encoding:NSASCIIStringEncoding]];
-	outputDir = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[2] encoding:NSASCIIStringEncoding]];
+	output    = [NSURL fileURLWithPath: [[NSString alloc] initWithCString: argv[2] encoding:NSASCIIStringEncoding]];
 	width	  = (CGFloat) atof(argv[3]);
-	format	  = [[NSString alloc] initWithCString: argv[4] encoding:NSASCIIStringEncoding];
-	[format autorelease];
-	pdfDoc = [[PDFSplit alloc] initWithURLOutDirWidth: pdfURL outDir: outputDir width: width outFormat: format];
+	pdfDoc    = [[PDFSplit alloc] initWithURLOutDirWidth: pdfURL outDir: output width: width];
 	[pdfDoc split];
-
   }
   @catch (NSException * e) {
 	printf("Error: %s\n", [[e reason] cStringUsingEncoding:NSASCIIStringEncoding]);
@@ -33,9 +29,10 @@ int main (int argc, const char * argv[]) {
 		  @"\n"
 		  @"options:\n"
 		  @" ORIGINAL_FILE:\tthe pdf you want to split\n"
-		  @" OUTPUT_DIR:\tthe directory where you want to place the pdf images\n"
+		  @" OUTPUT:\tthe output path where you want to place the pdf images. It\n"
+		  @" \t\tshould be a c format string like '%d.png'. The extension specifies\n"
+		  @" \t\tthe resulting image's type. Consult the man page for allowed types.\n"
 		  @" WIDTH:\t\tthe width of the resulting image\n"
-		  @" FORMAT:\tthe output format\n"
 		   cStringUsingEncoding:NSASCIIStringEncoding]
 	);
 	
